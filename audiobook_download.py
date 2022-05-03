@@ -132,6 +132,7 @@ def download_html(url:str):
 
 def prepare_phrase(phrase:str):
     phrase = phrase.replace(' ','+')
+    phrase = phrase.replace('/','+')
     return phrase
 
 def search(phrase:str, **kargs):
